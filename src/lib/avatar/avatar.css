@@ -1,0 +1,35 @@
+.avatar {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.avatar-content {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar-content img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.avatar-content span {
+    font-family: verdana, sans-serif;
+}
+
+.avatar-status {
+    display: inline-block;
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
