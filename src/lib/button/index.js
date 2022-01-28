@@ -8,7 +8,7 @@ const Button = ({ label, iconStart, iconEnd, color, size, disabled, onClick }) =
 
     switch (color) {
         case 'success':
-            bgColor = '#32CD32';
+            bgColor = 'green';
             break;
 
         case 'error':
@@ -20,9 +20,9 @@ const Button = ({ label, iconStart, iconEnd, color, size, disabled, onClick }) =
             break;
 
         case 'info':
-            bgColor = 'rgb(46, 102, 224)';
+            bgColor = 'blue';
             break;
-        
+
 
         default:
             bgColor = 'grey';
@@ -48,11 +48,17 @@ const Button = ({ label, iconStart, iconEnd, color, size, disabled, onClick }) =
     }
 
 
-    return <button className="button" onClick={onClick} style={{ backgroundColor: bgColor, fontSize: fontSize, padding: padding }} disabled={disabled}>
-        {iconStart && <img src={iconStart} />}
-        {label && <span>{label}</span>}
-        {iconEnd && <img src={iconEnd} />}
-    </button>
-}
+    return <button className="button"
+        onClick={onClick}
+        style={
+            { backgroundColor: bgColor, fontSize: fontSize, padding: padding }}
+        disabled={disabled} > {
+            iconStart && < img src={iconStart}
+            />} {
+            label && <span> {label} </span>} {
+                iconEnd && < img src={iconEnd}
+                />}
+                </button>
+                    }
 
-export default Button
+                export default Button
