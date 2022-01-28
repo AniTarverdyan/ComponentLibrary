@@ -1,6 +1,6 @@
-# component-library
+# aca-component-library
 A library of React components created using `create-react-app`.
 
 ## Installation
 Run the following command:
-`npm install component-library`
+`npm install aca-component-library`
