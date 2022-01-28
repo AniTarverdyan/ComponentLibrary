@@ -1,0 +1,115 @@
+.popup2_main{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.8);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup2_body{
+    width: 33%;
+    min-height: 55%;
+    position: relative;
+    border: 3px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup2_body1{
+    width: 100%;
+    height: 100%;
+    padding: 0 12px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.popup2_close{
+    position: absolute;
+    cursor: pointer;
+    top: -10px;
+    right: 1px;
+    color: #3E230F;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.popup2_height{
+    margin-top: 10px;
+    width: 95%;
+    height: 55%;
+    background-image: url("../../images/subscribe.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.popup2_p1{
+    margin-top: 10px;
+    margin-bottom: 12%;
+    width: 60%;
+    color: #3E230F;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+}
+
+
+.popup2_span{
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.popup2_inp{
+    margin-top: 10px;
+    width: 93%;
+    padding: 10px 25px;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+
+.popup2_btn{
+    margin-top: 10px;
+    width: 93%;
+    padding: 15px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #3E230F;
+    border: none;
+}
+.popup2_link{
+    font-style: italic;
+    color: #3E230F;
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup2_p2{
+    color: red;
+    text-align: center;
+    width: 100%;
+    padding: 0 15px 10px 15px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+}
+#popup2_hide{
+    display: none;
+}
