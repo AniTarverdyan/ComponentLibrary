@@ -68,13 +68,21 @@ const Avatar = ({ image, text, size, variant, status }) => {
     switch (status) {
         case 'active':
             statusStyle.backgroundColor = 'green';
+            statusStyle.border = '1px solid white';
             break;
         case 'inactive':
             statusStyle.backgroundColor = 'grey';
+            statusStyle.border = '1px solid white';
             break;
         case 'idle':
             statusStyle.backgroundColor = 'orange';
+            statusStyle.border = '1px solid white';
             break;
+        case 'none':
+        default:
+            statusStyle.backgroundColor = 'none';
+            break;
+
 
     }
 
