@@ -11,6 +11,11 @@
     "type": "git",
     "url": "URL_OF_YOUR_REPOSITORY"
   },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -56,7 +61,8 @@
     "@storybook/builder-webpack5": "^6.4.14",
     "@storybook/manager-webpack5": "^6.4.14",
     "@storybook/react": "^6.4.14",
-    "babel-cli": "^6.26.0",
+    "@babel/cli": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.2.3",
     "webpack": "^5.67.0"
   }
