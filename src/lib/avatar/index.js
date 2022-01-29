@@ -86,8 +86,8 @@ const Avatar = ({ image, text, size, variant, status }) => {
 
     }
 
-    return <span className="avatar" style={style}>
-        <span className="avatar-content">
+    return <span className="avatar">
+        <span className="avatar-content"  style={style}>
             {image && <img src={image} />}
             {!image && text && <span>{text}</span>}
         </span>
