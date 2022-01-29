@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./InputText.css";
 
-const InputText = (props) => {
-  const { type, color, placeholder, fontSize, fontFamily, warningText } = props;
+const InputText = ({ type, disabled, placeholder, fontSize, warningText }) => {
   const [inputValue, setInputValue] = useState("");
   const [warnText, setWarnText] = useState("");
   const handleChange = (e) => {
@@ -31,9 +30,6 @@ const InputText = (props) => {
     case "success":
       borderColor = "#0f0";
       break;
-    case "light":
-      borderColor = "#fff";
-      break;
     case "dark":
       borderColor = "#000";
       break;
@@ -43,14 +39,13 @@ const InputText = (props) => {
   return (
     <div className="inputText">
       <input
+        disabled={!!disabled}
         onChange={handleChange}
         type="text"
         placeholder={placeholder}
         value={inputValue}
         style={{
           fontSize: fontSize,
-          fontFamily: fontFamily,
-          color: color,
           borderWidth: "2px",
           borderStyle: "solid",
           borderColor: borderColor,

@@ -13,7 +13,7 @@ ReactDom.render(
                 color={'warning'}
                 size={'large'}
                 disabled={false}
-                onClick={() => alert('asdf')}
+                onClick={() => alert('Clicked')}
             />
         </div>
     </React.StrictMode>,

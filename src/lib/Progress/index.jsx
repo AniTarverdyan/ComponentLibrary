@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import './Progress.css';
+import React, { useEffect, useState } from "react";
+import "./Progress.css";
 
-const Progress = (props) => {
-  const { max, value, type } = props;
-  const [progress, setProgress] = useState(value)
-  const progress = 100 * (value / max) + "%";
+const Progress = ({ max, value, type, label }) => {
+  const [progress, setProgress] = useState("");
+  useEffect(() => {
+    setProgress(100 * (value / max) + "%");
+  }, [progress]);
   let progressValueBg;
   let progressBarBd;
   switch (type) {
@@ -13,7 +14,7 @@ const Progress = (props) => {
       break;
     case "primary":
       progressValueBg = "#00f";
-      break
+      break;
     case "warning":
       progressValueBg = "#fc0";
       break;
@@ -22,9 +23,6 @@ const Progress = (props) => {
       break;
     case "success":
       progressValueBg = "#0f0";
-      break;
-    case "light":
-      progressValueBg = "#fff";
       break;
     case "dark":
       progressValueBg = "#000";
@@ -35,8 +33,8 @@ const Progress = (props) => {
 
   progressBarBd = progressValueBg;
   const handleChange = (e) => {
-    setProgress(e.target.value)
-  }
+    setProgress(100 * (e.target.value / max) + "%");
+  };
   return (
     <div
       className="progress"
@@ -50,7 +48,9 @@ const Progress = (props) => {
       <div
         style={{ backgroundColor: progressValueBg, width: progress }}
         className="progressValue"
-      ></div>
+      >
+        {label && progress}
+      </div>
     </div>
   );
 };
