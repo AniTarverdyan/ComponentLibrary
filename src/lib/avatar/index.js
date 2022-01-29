@@ -68,20 +68,28 @@ const Avatar = ({ image, text, size, variant, status }) => {
     switch (status) {
         case 'active':
             statusStyle.backgroundColor = 'green';
+            statusStyle.border = '1px solid white';
             break;
         case 'inactive':
             statusStyle.backgroundColor = 'grey';
+            statusStyle.border = '1px solid white';
             break;
         case 'idle':
             statusStyle.backgroundColor = 'orange';
+            statusStyle.border = '1px solid white';
             break;
+        case 'none':
+        default:
+            statusStyle.backgroundColor = 'none';
+            break;
+
 
     }
 
     return <span className="avatar" style={style}>
         <span className="avatar-content">
             {image && <img src={image} />}
-            {text && <span>{text}</span>}
+            {!image && text && <span>{text}</span>}
         </span>
         {status && <span className="avatar-status" style={statusStyle}></span>}
     </span>
