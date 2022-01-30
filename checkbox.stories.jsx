@@ -9,7 +9,7 @@ export default {
   argTypes: {
     label: { control: "text" },
     defaultChecked: { control: "boolean" },
-    size: { control: "text", options: ["small", "middle", "big"] },
+    size: {control: "text", options: ["small", "middle", "big"] },
     defaultDisabled: { control: "boolean" },
     color: {control: "text"},
     type: {
