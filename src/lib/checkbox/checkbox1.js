@@ -1,6 +1,5 @@
 import react, {useRef, useState, useMemo} from "react"
 import "./checkbox1.css"
-import img from "./check.png"
 
 export default function Checkbox1({label, defaultChecked, defaultDisabled, size, color, type}){
         const [checkInput, setCheckInput]=useState(!!defaultChecked)
