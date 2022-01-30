@@ -2,7 +2,7 @@ import React from "react";
 import Popup from "../lib/popup4/popup4";
 
 export default {
-  title: "Library/Popup3",
+  title: "Library/Popup4",
   component: Popup,
 };
 
