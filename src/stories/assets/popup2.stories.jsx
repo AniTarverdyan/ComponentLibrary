@@ -1,5 +1,5 @@
 import React from "react";
-import Popup from "./src/lib/popup2/popup2";
+import Popup from "../../lib/popup2/popup2";
 
 export default {
   title: "Library/Popup2",
