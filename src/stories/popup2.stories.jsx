@@ -14,7 +14,7 @@ const Template = (args) => <Popup {...args} />;
 
 export const example1 = Template.bind({});
   example1.args = {
-    type:"subscribe",
+    type:"subsfffcribe",
     headerText:"Enter your email below to get 10% OFF your first order!",
     inputPlaceholder:"Write email",
     inputValue:"",
