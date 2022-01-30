@@ -6,17 +6,17 @@ export default {
   component: Checkbox,
 
 
-//   argTypes: {
-//     label: { control: "text" },
-//     defaultChecked: { control: "boolean" },
-//     size: {control: "radio", options: ["small", "middle", "big"] },
-//     defaultDisabled: { control: "boolean" },
-//     color: {control: "text"},
-//     type: {
-//       control: "radio",
-//       options: ["shopBasket", "heart", "finger", "bookMark"],
-//     },
-//   },
+  argTypes: {
+    label: { control: "text" },
+    defaultChecked: { control: "boolean" },
+    size: {control: "radio", options: ["small", "middle", "big"] },
+    defaultDisabled: { control: "boolean" },
+    color: {control: "text"},
+    type: {
+      control: "radio",
+      options: ["shopBasket", "heart", "finger", "bookMark"],
+    },
+  },
 };
 
 const Template = (args) => <Checkbox {...args} />;
