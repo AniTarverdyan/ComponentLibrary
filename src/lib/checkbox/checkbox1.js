@@ -68,9 +68,9 @@ export default function Checkbox1({label, defaultChecked, defaultDisabled, size,
         <div className={"div1"}>
                 {!type && <label>
                         <input
-                            style={{accentColor: color?color:null}}
                             type="checkbox"
-                            checked={checkInput}
+                            style={{accentColor: color?color:null}}
+                            checked={!!checkInput}
                             onChange={isChecked}
                             disabled={!!defaultDisabled}
                             className={inputSize()}
