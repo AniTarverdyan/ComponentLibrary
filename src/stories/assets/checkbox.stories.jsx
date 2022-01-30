@@ -1,5 +1,5 @@
 import React from "react";
-import Checkbox from "./src/lib/checkbox/checkbox1";
+import Checkbox from "../../lib/checkbox/checkbox1";
 
 export default {
   title: "Library/Checkbox",
