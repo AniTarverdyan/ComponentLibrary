@@ -10,7 +10,8 @@ export default {
         iconEnd: { control: "text" },
         color: { control: "radio", options: ["success", "warning", "info", "error"]},
         size: { control: "radio", options: ["small", "medium", "large"]},
-        disabled: { control: "boolean" },    
+        disabled: { control: "boolean" },   
+        onClick: { control: 'hidden'} 
     },
 };
 
